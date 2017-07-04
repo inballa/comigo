@@ -1,7 +1,53 @@
 @media screen and (max-width: 700px) {
-  header nav {
-    visibility: hidden;
+  .main-nav {
+    display: none;
   }
 }
 
-footer
+.site-footer {
+  background-color: #1e2024;
+}
+
+.bottom-footer {
+  background-color: #000000;
+}
+
+.main-menu > li > a {
+  color: #3d3d3d;
+}
+
+.main-menu > li > a:focus,
+.main-menu > li > a:hover {
+  color: #f14848;
+}
+
+.secondary-menu > li > a {
+  color: #3d3d3d;
+}
+
+.secondary-menu {
+  display: none;
+}
+
+.main-menu li:hover > .secondary-menu{
+  display: block;
+}
+
+
+
+.secondary-menu > li > a:focus,
+.secondary-menu > li > a:hover {
+  color: #ffffff;
+  background-color: #f14848;
+}
+
+.main-nav a:focus {
+  outline: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+.main-nav a:hover + .secondary-menu {
+  display: block;
+}
