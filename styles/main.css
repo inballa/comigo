@@ -4,6 +4,15 @@
   }
 }
 
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*????????*/
+body a {
+  text-decoration: none;
+}
+
 .site-footer {
   background-color: #1e2024;
 }
@@ -29,11 +38,9 @@
   display: none;
 }
 
-.main-menu li:hover > .secondary-menu{
+.main-menu li:hover > .secondary-menu {
   display: block;
 }
-
-
 
 .secondary-menu > li > a:focus,
 .secondary-menu > li > a:hover {
@@ -48,6 +55,69 @@
 .main-nav a {
   text-decoration: none;
 }
+
 .main-nav a:hover + .secondary-menu {
   display: block;
 }
+
+.reset-list {
+  list-style: none;
+  /*padding-left: 0;*/
+}
+
+.demo-button {
+  color: #ffffff;
+  background-color: #f14848;
+}
+
+/*can I put in same class?????*/
+/*text decoration here?*/
+.site-links {
+  color: #ffffff;
+  background-color: #f14848;
+  text-decoration: none;
+}
+
+.ott-tv {
+  color: #f14848;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.download {
+  display: inline-block;
+  background-color: #f14848;
+  color: #ffffff;
+}
+
+.footer-main-menu > li > a {
+  color: #ffffff;
+}
+.footer-main-menu > li > a:focus {
+  outline: none;
+}
+
+.footer-secondary-menu > li > a {
+  color: #7a7a7a;
+}
+
+.footer-secondary-menu > li > a:hover,
+.footer-secondary-menu > li > a:focus {
+  color: #f14848;
+  outline: none;
+}
+
+.bottom-footer {
+  color: #636363;
+}
+
+.bottom-footer a{
+  color: #636363;
+}
+
+.bottom-footer a:hover,
+.bottom-footer a:focus {
+  color: #ffffff;
+  outline: none;
+}
+
