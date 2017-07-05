@@ -1,3 +1,9 @@
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
 @media screen and (max-width: 700px) {
   .main-nav {
     display: none;
@@ -8,10 +14,16 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*????????*/
-body a {
+.reset-links a{
   text-decoration: none;
+  color: #ffffff;
+  outline: none;
 }
+.reset-list {
+  list-style: none;
+  /*padding-left: 0;*/
+}
+
 
 .site-footer {
   background-color: #1e2024;
@@ -25,6 +37,9 @@ body a {
   color: #3d3d3d;
 }
 
+/*.read-more{*/
+  /*background-color: #f14848;*/
+/*}*/
 .main-menu > li > a:focus,
 .main-menu > li > a:hover {
   color: #f14848;
@@ -48,10 +63,6 @@ body a {
   background-color: #f14848;
 }
 
-.main-nav a:focus {
-  outline: none;
-}
-
 .main-nav a {
   text-decoration: none;
 }
@@ -60,41 +71,32 @@ body a {
   display: block;
 }
 
-.reset-list {
-  list-style: none;
-  /*padding-left: 0;*/
-}
 
-.demo-button {
-  color: #ffffff;
-  background-color: #f14848;
-}
 
 /*can I put in same class?????*/
 /*text decoration here?*/
-.site-links {
+/*.social-media li,*/
+.blogs a,
+.site-button {
   color: #ffffff;
   background-color: #f14848;
-  text-decoration: none;
-}
 
+}
+/*need this?*/
+.social-media li
+{
+  background-color: #f14848;
+}
+/*? delete?*/
 .ott-tv {
   color: #f14848;
   background-color: #ffffff;
-  text-decoration: none;
+
 }
 
-.download {
-  display: inline-block;
-  background-color: #f14848;
-  color: #ffffff;
-}
 
 .footer-main-menu > li > a {
   color: #ffffff;
-}
-.footer-main-menu > li > a:focus {
-  outline: none;
 }
 
 .footer-secondary-menu > li > a {
@@ -104,7 +106,6 @@ body a {
 .footer-secondary-menu > li > a:hover,
 .footer-secondary-menu > li > a:focus {
   color: #f14848;
-  outline: none;
 }
 
 .bottom-footer {
@@ -118,6 +119,8 @@ body a {
 .bottom-footer a:hover,
 .bottom-footer a:focus {
   color: #ffffff;
-  outline: none;
 }
 
+.top-main{
+  background-image: url("");
+}
