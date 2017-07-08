@@ -32,17 +32,21 @@ body {
   background-color: #1e2024;
 }
 
-.bottom-footer {
-  background-color: #000000;
-
-}
-.main-menu li{
+.main-menu li {
   display: inline-block;
   font-size: 16px;
   vertical-align: top;
 }
+
 .main-menu > li > a {
   color: #3d3d3d;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.main-menu a.checked {
+  color: #f14848;
+  font-weight: 700;
 }
 
 .main-menu > li > a:focus,
@@ -53,12 +57,15 @@ body {
 .secondary-menu > li > a {
   color: #3d3d3d;
 }
-.double-width li{
-  width: 50vw;
+
+.double-width > li {
+  width: 50%;
 }
-.triple-width li{
-  width: 33.3333333333vw;
+
+.triple-width > li {
+  width: 33.3333333333%;
 }
+
 .secondary-menu {
   display: none;
   position: absolute;
@@ -67,12 +74,26 @@ body {
   /*del*/
   font-size: 0;
 }
-.secondary-menu li{
+
+.secondary-menu li {
   color: #000000;
   background-color: #ffffff;
 }
+
 .main-menu li:hover > .secondary-menu {
   display: block;
+}
+
+.main-menu > li {
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+/*ask padding ul and margin for direct li*/
+ul.main-menu {
+  padding-right: 0.5vw;
+  padding-left: 0.5vw;
+
 }
 
 /*??????????????!?!?!!?!?*//*50%???????????????????????????*/
@@ -81,15 +102,16 @@ body {
   outline: dashed;
 }
 
-.main-menu li{
+.main-menu li {
   display: inline-block;
   height: 100px;
 }
 
-.main-menu a{
+.main-menu a {
   width: 100%;
   height: 100%;
 }
+
 .secondary-menu > li > a:focus,
 .secondary-menu > li > a:hover {
   color: #ffffff;
@@ -122,8 +144,23 @@ body {
 /*.social-media li,*/
 .why-comigo {
   height: 28.999917287vw;
+  width: 17em;
+  /*puts section in center*/
+  margin: 0 auto;
+  /*put h and button in center*/
+  text-align: center;
+  padding-top: 3vw;
 }
-
+.why-comigo h2{
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin-bottom: 0.5vw;
+}
+.why-comigo p{
+  font-weight: 300;
+  line-height: 1.2em;
+}
 .round-button,
 .red-button {
   color: #ffffff;
@@ -131,6 +168,9 @@ body {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 42.232px;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  font-size: small;
 
 }
 
@@ -142,6 +182,10 @@ body {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 42.232px;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  font-size: small;
+
 
 }
 
@@ -160,12 +204,26 @@ body {
 
 .bottom-footer {
   color: #636363;
+  background-color: #000000;
+  height: 2.480270575vw;
+  position: relative;
+
 }
 
 .bottom-footer a {
   color: #636363;
 }
-
+/*ask: can I combine all children without *?? what's better */
+.bottom-footer ul,
+.bottom-footer address,
+.bottom-footer div,
+.bottom-footer li {
+  display: inline-block;
+}
+.right-footer{
+  position: absolute;
+  right: 0;
+}
 .bottom-footer a:hover,
 .bottom-footer a:focus {
   color: #ffffff;
@@ -233,6 +291,11 @@ body {
   vertical-align: top;
   position: relative;
 }
+.blog-title{
+  position: absolute;
+  bottom: 0;
+  font-weight: 300;
+}
 
 .blogs p {
   position: absolute;
@@ -273,10 +336,29 @@ body {
   background-image: url(../assets/other/ic-EI-cloud-brain-hp.png), url(../assets/other/home-tv-service-bg1.png);
   background-repeat: no-repeat, no-repeat;
   background-size: auto, cover;
-  font-size: 16px;
+  /*margin: 0 auto;*/
+  vertical-align: top;
+  position: relative;
 
 }
 
+.solutions-text h2{
+  font-weight: 400;
+  font-size: 2rem;
+}
+.solutions-text h3{
+  font-weight: 300;
+  font-size: 2rem;
+
+}
+.solutions-text
+{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3vw;
+  /*nask: not working!!!!!*/
+  /*margin: 0 auto;*/
+}
 .deploy-tech {
   display: inline-block;
   height: 41.9988420182vw;
@@ -285,6 +367,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-size: 50% auto, cover;
   font-size: 16px;
+  position: relative;
 
 }
 
@@ -295,5 +378,26 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-size: contain, auto;
   background-position: center, top left;
+  padding-top: 10%;
 
+}
+.top-main-text{
+  /*not working:((*/
+ text-align: center;
+  margin: 0 auto;
+  width: 50em;
+
+}
+.top-main h1 {
+  font-size: 3em;
+  font-weight: 400;
+
+}
+
+/*upper for all uppercase or just span inside main menu???*/
+.upper {
+  text-transform: uppercase;
+}
+.content{
+  font-weight: 300;
 }
