@@ -31,7 +31,17 @@ body {
 .site-footer {
   background-color: #1e2024;
 }
-
+.main-nav > a{
+  display: inline-block;
+}
+.main-nav{
+  position: fixed;
+  background-color: #ffffff;
+  margin-bottom: 20vw;
+  /*delete?????????*/
+  left: 0;
+  right: 0;
+}
 .main-menu li {
   display: inline-block;
   font-size: 16px;
@@ -220,10 +230,13 @@ ul.main-menu {
 .bottom-footer li {
   display: inline-block;
 }
-.right-footer{
-  position: absolute;
-  right: 0;
-}
+/*.right-footer{*/
+  /*position: absolute;*/
+  /*right: 0;*/
+/*}*/
+/*.bottom-footer{*/
+  /*text-align: justify;*/
+/*}*/
 .bottom-footer a:hover,
 .bottom-footer a:focus {
   color: #ffffff;
