@@ -14,6 +14,7 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 66px;
 }
 
 .reset-links a {
@@ -28,20 +29,51 @@ body {
 
 }
 
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 66px;
+  background-color: #ffffff;
+  line-height: 66px;
+  text-align: right;
+}
+
+.site-header > a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  vertical-align: middle;
+  line-height: 66px;
+  margin-left: 20px;
+}
+
+/*align the img in the middle of a which is 100% from header's height*/
+.site-header img {
+  vertical-align: middle;
+}
+
+/*.site-header > a{*/
+/*display: inline-block;*/
+/*height: 66px;*/
+
+/*}*/
 .site-footer {
   background-color: #1e2024;
 }
-.main-nav > a{
+
+.main-nav > a {
   display: inline-block;
 }
-.main-nav{
-  position: fixed;
+
+.main-nav {
   background-color: #ffffff;
-  margin-bottom: 20vw;
-  /*delete?????????*/
-  left: 0;
-  right: 0;
+  display: inline-block;
+  height: 100%;
+  text-align: center;
 }
+
 .main-menu li {
   display: inline-block;
   font-size: 16px;
@@ -62,10 +94,12 @@ body {
 .main-menu > li > a:focus,
 .main-menu > li > a:hover {
   color: #f14848;
+
 }
 
 .secondary-menu > li > a {
   color: #3d3d3d;
+  text-transform: uppercase;
 }
 
 .double-width > li {
@@ -81,6 +115,7 @@ body {
   position: absolute;
   right: 0;
   left: 0;
+  top: 100%;
   /*del*/
   font-size: 0;
 }
@@ -94,15 +129,15 @@ body {
   display: block;
 }
 
-.main-menu > li {
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
+.main-menu > li > a {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*ask padding ul and margin for direct li*/
 ul.main-menu {
-  padding-right: 0.5vw;
-  padding-left: 0.5vw;
+  padding-right: 10px;
+  padding-left: 10px;
 
 }
 
@@ -114,10 +149,10 @@ ul.main-menu {
 
 .main-menu li {
   display: inline-block;
-  height: 100px;
 }
 
 .main-menu a {
+  display: inline-block;
   width: 100%;
   height: 100%;
 }
@@ -141,7 +176,6 @@ ul.main-menu {
 .main-nav a:hover + .secondary-menu a {
   display: inline-block;
   outline: dashed;
-  width: 33.3333333333%;
 }
 
 .main-nav a:hover + .secondary-menu {
@@ -161,16 +195,19 @@ ul.main-menu {
   text-align: center;
   padding-top: 3vw;
 }
-.why-comigo h2{
+
+.why-comigo h2 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 2.2rem;
   margin-bottom: 0.5vw;
 }
-.why-comigo p{
+
+.why-comigo p {
   font-weight: 300;
   line-height: 1.2em;
 }
+
 .round-button,
 .red-button {
   color: #ffffff;
@@ -195,7 +232,6 @@ ul.main-menu {
   letter-spacing: 0.1rem;
   font-weight: 300;
   font-size: small;
-
 
 }
 
@@ -223,6 +259,7 @@ ul.main-menu {
 .bottom-footer a {
   color: #636363;
 }
+
 /*ask: can I combine all children without *?? what's better */
 .bottom-footer ul,
 .bottom-footer address,
@@ -230,12 +267,13 @@ ul.main-menu {
 .bottom-footer li {
   display: inline-block;
 }
+
 /*.right-footer{*/
-  /*position: absolute;*/
-  /*right: 0;*/
+/*position: absolute;*/
+/*right: 0;*/
 /*}*/
 /*.bottom-footer{*/
-  /*text-align: justify;*/
+/*text-align: justify;*/
 /*}*/
 .bottom-footer a:hover,
 .bottom-footer a:focus {
@@ -272,6 +310,7 @@ ul.main-menu {
   width: 16.6666666667vw;
   vertical-align: top;
   position: relative;
+  overflow: hidden;
 }
 
 .blogs span {
@@ -281,7 +320,8 @@ ul.main-menu {
   width: 100%;
   height: 5.2051282051vw;
   position: absolute;
-  bottom: -5.2051282051vw;
+  top: 100%;
+
 }
 
 .blogs a {
@@ -304,7 +344,8 @@ ul.main-menu {
   vertical-align: top;
   position: relative;
 }
-.blog-title{
+
+.blog-title {
   position: absolute;
   bottom: 0;
   font-weight: 300;
@@ -323,7 +364,7 @@ ul.main-menu {
   background-image: url(../assets/blog/IMG_9294-750x563.jpeg);
 }
 
-.bid-data {
+.big-data {
   background-image: url(../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg);
 }
 
@@ -355,23 +396,25 @@ ul.main-menu {
 
 }
 
-.solutions-text h2{
+.solutions-text h2 {
   font-weight: 400;
   font-size: 2rem;
 }
-.solutions-text h3{
+
+.solutions-text h3 {
   font-weight: 300;
   font-size: 2rem;
 
 }
-.solutions-text
-{
+
+.solutions-text {
   position: absolute;
   bottom: 0;
   margin-bottom: 3vw;
   /*nask: not working!!!!!*/
   /*margin: 0 auto;*/
 }
+
 .deploy-tech {
   display: inline-block;
   height: 41.9988420182vw;
@@ -394,13 +437,15 @@ ul.main-menu {
   padding-top: 10%;
 
 }
-.top-main-text{
+
+.top-main-text {
   /*not working:((*/
- text-align: center;
+  text-align: center;
   margin: 0 auto;
   width: 50em;
 
 }
+
 .top-main h1 {
   font-size: 3em;
   font-weight: 400;
@@ -411,6 +456,27 @@ ul.main-menu {
 .upper {
   text-transform: uppercase;
 }
-.content{
+
+.content {
   font-weight: 300;
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 500px;
+  overflow: hidden;
+  background-image: url("");
 }
+
+.content img {
+  position: absolute;
+  right: -135px;
+  width: 60%;
+  top: 0;
+}
+.content-text{
+  margin: 0 auto;
+}
+
+/*.services dd{*/
+  /*display: ;*/
+/*}*/
