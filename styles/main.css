@@ -475,12 +475,38 @@ ul.main-menu {
   padding-left: 10%;
   padding-top: 12%;
 }
+.services{
+  position: relative;
+  right: 0;
+  top: 0;
+  /*del*/
+  font-size: 0;
+}
 .services span{
   font-weight: 300;
+  text-transform: lowercase;
 }
 .services h2{
+  /*del*/
+  font-size: 16px;
   display: inline-block;
+  width: 33.3333333333%;
 }
-/*.services dd{*/
-  /*display: ;*/
-/*}*/
+.services dl {
+  /*del*/
+  font-size: 16px;
+  display: inline-block;
+  width: 66.6666666667%;
+  text-transform: uppercase;
+}
+.services dt{
+  display: inline-block;
+  width: 33.3333333333%;
+  /*del*/
+  font-size: 16px;
+}
+.services dd{
+  display: inline-block;
+  width: 33.3333333333%;
+  font-size: 16px;
+}
