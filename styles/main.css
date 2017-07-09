@@ -83,7 +83,7 @@ body {
 .main-menu > li > a {
   color: #3d3d3d;
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 01.1rem;
 }
 
 .main-menu a.checked {
@@ -144,7 +144,6 @@ ul.main-menu {
 /*??????????????!?!?!!?!?*//*50%???????????????????????????*/
 .main-menu li:hover > .secondary-menu > li > a {
   display: inline-block;
-  outline: dashed;
 }
 
 .main-menu li {
@@ -175,12 +174,10 @@ ul.main-menu {
 /*50%???????????????????????????*/
 .main-nav a:hover + .secondary-menu a {
   display: inline-block;
-  outline: dashed;
 }
 
 .main-nav a:hover + .secondary-menu {
   /*width: 50%;*/
-  outline: dashed;
 }
 
 /*can I put in same class?????*/
@@ -459,24 +456,31 @@ ul.main-menu {
 
 .content {
   font-weight: 300;
-  position: relative;
-  top: 0;
-  right: 0;
+  /*position: relative;*/
+  /*top: 0;*/
+  /*right: 0;*/
   height: 500px;
   overflow: hidden;
-  background-image: url("");
+  background-image: url("../assets/other/screen_whos_on.jpg");
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: right;
+  background-position-x: 115%;
+  background-size: 60%;
 }
 
-.content img {
-  position: absolute;
-  right: -135px;
-  width: 60%;
-  top: 0;
-}
+
 .content-text{
-  margin: 0 auto;
+  width: 40%;
+  padding-left: 10%;
+  padding-top: 12%;
 }
-
+.services span{
+  font-weight: 300;
+}
+.services h2{
+  display: inline-block;
+}
 /*.services dd{*/
   /*display: ;*/
 /*}*/
